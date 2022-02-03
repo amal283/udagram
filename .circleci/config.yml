@@ -18,6 +18,7 @@ jobs:
     steps:
       - node/install
       - checkout
+      - run:
           name: "Front-End Install"
           command: |
             npm run frontend:install
