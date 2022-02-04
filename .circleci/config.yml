@@ -21,11 +21,6 @@ jobs:
       - checkout
       - aws-cli/setup
       - run:
-          command: |
-            google-chrome --version
-            chromedriver --version
-          name: Check install
-      - run:
           name: "Front-End Install"
           command: |
             npm run frontend:install
