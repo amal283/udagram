@@ -52,4 +52,7 @@ jobs:
 workflows:
   udagram-deployment-workflow:
     jobs:
-      - udagram-deployment
+      - udagram-deployment:
+          filters:
+            branches:
+              only: main
